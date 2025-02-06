@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional painting, renovations, and construction services in Belleville. Quality workmanship with social impact.">
+    <title>RCN Painting, Renovations & Construction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2A5C82;
+            --secondary-color: #E8491D;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .navbar {
+            border-bottom: 3px solid var(--secondary-color);
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1600585154526-990dced4db0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80') center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        
+        .service-card {
+            transition: transform 0.3s;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .before-after {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        
+        .before-after img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+        }
+
+        .value-box {
+            background: #f8f9fa;
+            border-left: 4px solid var(--secondary-color);
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h2 class="text-primary mb-0">RCN</h2>
+                <small class="text-muted">Painting, Renovations & Construction</small>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container text-center">
+            <h1 class="display-4 mb-4 fw-bold">Transforming Spaces, Building Futures</h1>
+            <p class="lead fs-4">Professional renovation services with a commitment to community development</p>
+            <a href="#contact" class="btn btn-primary btn-lg mt-3 px-5 py-3">Get Free Estimate</a>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 display-5">Our Services</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80" class="card-img-top" alt="Painting service">
+                        <div class="card-body">
+                            <h5 class="card-title">Professional Painting</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success"></i> Interior/Exterior Painting</li>
+                                <li><i class="fas fa-check text-success"></i> Roof Restoration</li>
+                                <li><i class="fas fa-check text-success"></i> Waterproofing</li>
+                                <li><i class="fas fa-check text-success"></i> Wood & Steel Restoration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80" class="card-img-top" alt="Renovation service">
+                        <div class="card-body">
+                            <h5 class="card-title">Renovations & Construction</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success"></i> Full Home Renovations</li>
+                                <li><i class="fas fa-check text-success"></i> Plastering & Drywall</li>
+                                <li><i class="fas fa-check text-success"></i> Tiling & Flooring</li>
+                                <li><i class="fas fa-check text-success"></i> Plumbing Solutions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80" class="card-img-top" alt="Cleaning service">
+                        <div class="card-body">
+                            <h5 class="card-title">Specialized Cleaning</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success"></i> Post-Construction Cleanup</li>
+                                <li><i class="fas fa-check text-success"></i> Commercial Cleaning</li>
+                                <li><i class="fas fa-check text-success"></i> Deep Cleaning Services</li>
+                                <li><i class="fas fa-check text-success"></i> Window Cleaning</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80" 
+                         alt="Our team" 
+                         class="img-fluid rounded-3">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="display-5 mb-4">About RCN</h2>
+                    <div class="value-box">
+                        <h4><i class="fas fa-bullseye me-2"></i>Our Mission</h4>
+                        <p>Empowering skilled workers through employment opportunities while delivering exceptional construction and renovation services.</p>
+                    </div>
+                    <div class="value-box">
+                        <h4><i class="fas fa-eye me-2"></i>Our Vision</h4>
+                        <p>Create 100+ sustainable jobs in Western Cape within 2 years while maintaining 95% client satisfaction rate.</p>
+                    </div>
+                    <div class="value-box">
+                        <h4><i class="fas fa-hand-holding-heart me-2"></i>Our Values</h4>
+                        <p>Quality craftsmanship, ethical employment practices, and community development through skills training.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 display-5">Recent Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="before-after">
+                        <img src="https://images.unsplash.com/photo-1595526117663-7a087ffdd0c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80" 
+                             alt="Bathroom renovation"
+                             class="img-fluid">
+                        <div class="p-3 bg-white">
+                            <h5>Bathroom Makeover</h5>
+                            <p>Complete renovation including tiling, plumbing, and waterproofing</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add 2 more project blocks -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 display-5">Get in Touch</h2>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="mb-4">
+                        <h4><i class="fas fa-map-marker-alt me-2"></i> Address</h4>
+                        <address>
+                            6 Bridal Cl, Tyger Falls<br>
+                            Belleville, 7530<br>
+                            Western Cape
+                        </address>
+                    </div>
+                    <div class="mb-4">
+                        <h4><i class="fas fa-phone me-2"></i> Phone</h4>
+                        <p>+27836948822<br>+27693965083</p>
+                    </div>
+                    <div class="mb-4">
+                        <h4><i class="fas fa-envelope me-2"></i> Email</h4>
+                        <p>richardmavudzi@gmail.com</p>
+                    </div>
+                    <div class="mb-4">
+                        <h4><i class="fas fa-clock me-2"></i> Working Hours</h4>
+                        <p>Mon-Fri: 7:30 AM - 5:00 PM<br>
+                        Sat: 8:00 AM - 1:00 PM</p>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <form action="https://formspree.io/f/[YOUR_FORM_ID]" method="POST">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                            </div>
+                            <div class="col-12">
+                                <textarea name="message" class="form-control" rows="5" placeholder="How can we help you?" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary w-100 py-2">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>RCN Services</h5>
+                    <ul class="list-unstyled">
+                        <li>Painting & Restoration</li>
+                        <li>Home Renovations</li>
+                        <li>Construction Services</li>
+                        <li>Specialized Cleaning</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-end">
+                    <h5>Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <p class="text-center mb-0">&copy; 2023 RCN Painting, Renovations & Construction. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
